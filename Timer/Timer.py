@@ -1,0 +1,10 @@
+x=input("Please enter the timer resolution: ")
+x=int(x)
+y=input("Please enter the system frequency in Mhz: ")
+y=int(y)
+z=input("Please enter the prescaller value: ")
+z=int(z)
+g=((2**x)*z)/(y*(10**6))
+g=g*10**3
+g=str(g)
+print("The Timer is : "+g+" milliseconds")
